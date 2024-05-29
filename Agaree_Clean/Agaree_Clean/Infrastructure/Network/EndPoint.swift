@@ -15,7 +15,7 @@ enum HttpMethod: String {
 }
 
 protocol ResponseDecoder {
-    func decode<T: Decodable>(_ data: Data?) throws -> T
+    func decode<T: Decodable>(_ data: Data) throws -> T
 }
 
 protocol BodyEncoder {
@@ -113,5 +113,42 @@ private extension Encodable {
         let data = try JSONEncoder().encode(self)
         let jsonData = try JSONSerialization.jsonObject(with: data)
         return jsonData as? [String : Any]
+    }
+}
+
+class EndPoint<T>: ResponseRequestable {
+    typealias Response = T
+    
+    let responseDecoder: ResponseDecoder
+    let path: String
+    let method: HttpMethod
+    let headerParameter: [String : String]
+    let queryParametersEncodable: (any Encodable)?
+    let queryParameters: [String : Any]
+    let bodyParametersEncodable: (any Encodable)?
+    let bodyParameters: [String : Any]
+    let bodyEncoder: BodyEncoder
+    
+    
+    init(
+        responseDecoder: ResponseDecoder,
+        path: String,
+        method: HttpMethod,
+        headerParameter: [String : String],
+        queryParametersEncodable: (any Encodable)?,
+        queryParameters: [String : Any],
+        bodyParametersEncodable: (any Encodable)?,
+        bodyParameters: [String : Any],
+        bodyEncoder: BodyEncoder = JSONBodyEncoder()
+    ) {
+        self.responseDecoder = responseDecoder
+        self.path = path
+        self.method = method
+        self.headerParameter = headerParameter
+        self.queryParametersEncodable = queryParametersEncodable
+        self.queryParameters = queryParameters
+        self.bodyParametersEncodable = bodyParametersEncodable
+        self.bodyParameters = bodyParameters
+        self.bodyEncoder = bodyEncoder
     }
 }

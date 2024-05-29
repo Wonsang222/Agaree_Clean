@@ -17,6 +17,8 @@
 		C15DED782C06039F00F82585 /* Agaree_CleanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED772C06039F00F82585 /* Agaree_CleanUITestsLaunchTests.swift */; };
 		C15DED8B2C0611CC00F82585 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED8A2C0611CC00F82585 /* EndPoint.swift */; };
 		C15DED8D2C06137700F82585 /* NetworkConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED8C2C06137700F82585 /* NetworkConfigurable.swift */; };
+		C15DED8F2C073B3800F82585 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED8E2C073B3800F82585 /* NetworkService.swift */; };
+		C15DED912C074B3B00F82585 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED902C074B3B00F82585 /* DataTransferService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		C15DED772C06039F00F82585 /* Agaree_CleanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agaree_CleanUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C15DED8A2C0611CC00F82585 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		C15DED8C2C06137700F82585 /* NetworkConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurable.swift; sourceTree = "<group>"; };
+		C15DED8E2C073B3800F82585 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C15DED902C074B3B00F82585 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,8 @@
 			children = (
 				C15DED8A2C0611CC00F82585 /* EndPoint.swift */,
 				C15DED8C2C06137700F82585 /* NetworkConfigurable.swift */,
+				C15DED8E2C073B3800F82585 /* NetworkService.swift */,
+				C15DED902C074B3B00F82585 /* DataTransferService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -308,7 +314,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15DED912C074B3B00F82585 /* DataTransferService.swift in Sources */,
 				C15DED592C06039D00F82585 /* ViewController.swift in Sources */,
+				C15DED8F2C073B3800F82585 /* NetworkService.swift in Sources */,
 				C15DED552C06039D00F82585 /* AppDelegate.swift in Sources */,
 				C15DED8B2C0611CC00F82585 /* EndPoint.swift in Sources */,
 				C15DED572C06039D00F82585 /* SceneDelegate.swift in Sources */,
