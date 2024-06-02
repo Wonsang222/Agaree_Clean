@@ -131,14 +131,14 @@ class EndPoint<T>: ResponseRequestable {
     
     
     init(
-        responseDecoder: ResponseDecoder,
+        responseDecoder: ResponseDecoder = JSONResponseDecoder(),
         path: String,
         method: HttpMethod,
-        headerParameter: [String : String],
-        queryParametersEncodable: (any Encodable)?,
-        queryParameters: [String : Any],
-        bodyParametersEncodable: (any Encodable)?,
-        bodyParameters: [String : Any],
+        headerParameter: [String : String] = [:],
+        queryParametersEncodable:  Encodable? = nil,
+        queryParameters: [String : Any] = [:],
+        bodyParametersEncodable: Encodable? = nil,
+        bodyParameters: [String : Any] = [:],
         bodyEncoder: BodyEncoder = JSONBodyEncoder()
     ) {
         self.responseDecoder = responseDecoder

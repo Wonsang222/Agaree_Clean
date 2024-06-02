@@ -8,6 +8,11 @@
 import Foundation
 
 struct APIEndpoints {
-    
+    static func getGames(with gameRequestDTO: GameRequestDTO) -> EndPoint<GameResponseDTO> {
+        return .init(
+            path: "\()/",
+            method: .get
+        )
+    }
 
 }
