@@ -22,6 +22,7 @@
 		C12F9C412C0C966C00757B6A /* DefaultGamesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C402C0C966C00757B6A /* DefaultGamesRepository.swift */; };
 		C12F9C442C0CA2E600757B6A /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C432C0CA2E600757B6A /* GameRepository.swift */; };
 		C12F9C462C0CA88600757B6A /* GameQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C452C0CA88600757B6A /* GameQuery.swift */; };
+		C12F9C482C0DF81C00757B6A /* GamePhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C472C0DF81C00757B6A /* GamePhotoRepository.swift */; };
 		C15DED552C06039D00F82585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED542C06039D00F82585 /* AppDelegate.swift */; };
 		C15DED572C06039D00F82585 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED562C06039D00F82585 /* SceneDelegate.swift */; };
 		C15DED592C06039D00F82585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED582C06039D00F82585 /* ViewController.swift */; };
@@ -69,6 +70,7 @@
 		C12F9C402C0C966C00757B6A /* DefaultGamesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGamesRepository.swift; sourceTree = "<group>"; };
 		C12F9C432C0CA2E600757B6A /* GameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepository.swift; sourceTree = "<group>"; };
 		C12F9C452C0CA88600757B6A /* GameQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameQuery.swift; sourceTree = "<group>"; };
+		C12F9C472C0DF81C00757B6A /* GamePhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePhotoRepository.swift; sourceTree = "<group>"; };
 		C15DED512C06039D00F82585 /* Agaree_Clean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agaree_Clean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15DED542C06039D00F82585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C15DED562C06039D00F82585 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			children = (
 				C12F9C3C2C0C568300757B6A /* Playable.swift */,
 				C12F9C432C0CA2E600757B6A /* GameRepository.swift */,
+				C12F9C472C0DF81C00757B6A /* GamePhotoRepository.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				C12F9C292C0C44B200757B6A /* Cancellable.swift in Sources */,
 				C15DED8B2C0611CC00F82585 /* EndPoint.swift in Sources */,
 				C15DED572C06039D00F82585 /* SceneDelegate.swift in Sources */,
+				C12F9C482C0DF81C00757B6A /* GamePhotoRepository.swift in Sources */,
 				C12F9C3A2C0C55D200757B6A /* GuessWho.swift in Sources */,
 				C12F9C3F2C0C886A00757B6A /* Games.swift in Sources */,
 				C15DED8D2C06137700F82585 /* NetworkConfigurable.swift in Sources */,

@@ -31,7 +31,8 @@ protocol NetworkSessionManager {
     typealias CompletionHandler = (Data?, URLResponse?, Error?) -> Void
     
     func request(_ request: URLRequest,
-                 completion: @escaping CompletionHandler) -> NetworkCancellable
+                 completion: @escaping CompletionHandler
+    ) -> NetworkCancellable
 }
 
 protocol NetworkErrorLogger {

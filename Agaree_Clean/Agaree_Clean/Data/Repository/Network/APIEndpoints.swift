@@ -10,7 +10,14 @@ import Foundation
 struct APIEndpoints {
     static func getGames(with gameRequestDTO: GameRequestDTO) -> EndPoint<GameResponseDTO> {
         return .init(
-            path: "\()/",
+            path: "\(gameRequestDTO.game.rawValue)",
+            method: .get
+        )
+    }
+    
+    static func getGuessWhoPhoto(path: String) -> EndPoint<Data> {
+        return .init(
+            path: "\(path)",
             method: .get
         )
     }
