@@ -10,6 +10,7 @@ import UIKit
 struct GuessWho: Playable {
     let answer: String?
     let imgURL: String?
+    var img: UIImage?
     
     init(
         answer: String?,

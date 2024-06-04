@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E27756F2C0E84090069A1FA /* PhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27756E2C0E84090069A1FA /* PhotoRepository.swift */; };
+		7E2775712C0E84AF0069A1FA /* STTRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2775702C0E84AF0069A1FA /* STTRepository.swift */; };
+		7E2775762C0EC4860069A1FA /* STTEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2775752C0EC4860069A1FA /* STTEngine.swift */; };
 		C12F9C212C0C440400757B6A /* DefaultAgareeGameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C202C0C440400757B6A /* DefaultAgareeGameRepository.swift */; };
 		C12F9C242C0C441800757B6A /* RepositoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C232C0C441800757B6A /* RepositoryTask.swift */; };
 		C12F9C272C0C443200757B6A /* DispatchQueueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C262C0C443200757B6A /* DispatchQueueType.swift */; };
@@ -19,10 +22,9 @@
 		C12F9C3A2C0C55D200757B6A /* GuessWho.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C392C0C55D200757B6A /* GuessWho.swift */; };
 		C12F9C3D2C0C568300757B6A /* Playable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C3C2C0C568300757B6A /* Playable.swift */; };
 		C12F9C3F2C0C886A00757B6A /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C3E2C0C886A00757B6A /* Games.swift */; };
-		C12F9C412C0C966C00757B6A /* DefaultGamesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C402C0C966C00757B6A /* DefaultGamesRepository.swift */; };
+		C12F9C412C0C966C00757B6A /* DefaultSTTRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C402C0C966C00757B6A /* DefaultSTTRepository.swift */; };
 		C12F9C442C0CA2E600757B6A /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C432C0CA2E600757B6A /* GameRepository.swift */; };
 		C12F9C462C0CA88600757B6A /* GameQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C452C0CA88600757B6A /* GameQuery.swift */; };
-		C12F9C482C0DF81C00757B6A /* GamePhotoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C472C0DF81C00757B6A /* GamePhotoRepository.swift */; };
 		C15DED552C06039D00F82585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED542C06039D00F82585 /* AppDelegate.swift */; };
 		C15DED572C06039D00F82585 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED562C06039D00F82585 /* SceneDelegate.swift */; };
 		C15DED592C06039D00F82585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED582C06039D00F82585 /* ViewController.swift */; };
@@ -55,6 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E27756E2C0E84090069A1FA /* PhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRepository.swift; sourceTree = "<group>"; };
+		7E2775702C0E84AF0069A1FA /* STTRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTRepository.swift; sourceTree = "<group>"; };
+		7E2775752C0EC4860069A1FA /* STTEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTEngine.swift; sourceTree = "<group>"; };
 		C12F9C202C0C440400757B6A /* DefaultAgareeGameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAgareeGameRepository.swift; sourceTree = "<group>"; };
 		C12F9C232C0C441800757B6A /* RepositoryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTask.swift; sourceTree = "<group>"; };
 		C12F9C262C0C443200757B6A /* DispatchQueueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueType.swift; sourceTree = "<group>"; };
@@ -67,10 +72,9 @@
 		C12F9C392C0C55D200757B6A /* GuessWho.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessWho.swift; sourceTree = "<group>"; };
 		C12F9C3C2C0C568300757B6A /* Playable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playable.swift; sourceTree = "<group>"; };
 		C12F9C3E2C0C886A00757B6A /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
-		C12F9C402C0C966C00757B6A /* DefaultGamesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGamesRepository.swift; sourceTree = "<group>"; };
+		C12F9C402C0C966C00757B6A /* DefaultSTTRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSTTRepository.swift; sourceTree = "<group>"; };
 		C12F9C432C0CA2E600757B6A /* GameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepository.swift; sourceTree = "<group>"; };
 		C12F9C452C0CA88600757B6A /* GameQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameQuery.swift; sourceTree = "<group>"; };
-		C12F9C472C0DF81C00757B6A /* GamePhotoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePhotoRepository.swift; sourceTree = "<group>"; };
 		C15DED512C06039D00F82585 /* Agaree_Clean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agaree_Clean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15DED542C06039D00F82585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C15DED562C06039D00F82585 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,13 +118,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E27756D2C0E83340069A1FA /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C12F9C3C2C0C568300757B6A /* Playable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7E2775742C0EC47F0069A1FA /* STT */ = {
+			isa = PBXGroup;
+			children = (
+				7E2775752C0EC4860069A1FA /* STTEngine.swift */,
+			);
+			path = STT;
+			sourceTree = "<group>";
+		};
 		C12F9C1F2C0C43E300757B6A /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 				C12F9C2C2C0C469E00757B6A /* Network */,
 				C12F9C222C0C440E00757B6A /* Utils */,
 				C12F9C202C0C440400757B6A /* DefaultAgareeGameRepository.swift */,
-				C12F9C402C0C966C00757B6A /* DefaultGamesRepository.swift */,
+				C12F9C402C0C966C00757B6A /* DefaultSTTRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -172,6 +192,7 @@
 		C12F9C382C0C55AF00757B6A /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				7E27756D2C0E83340069A1FA /* Protocol */,
 				C12F9C392C0C55D200757B6A /* GuessWho.swift */,
 				C12F9C3E2C0C886A00757B6A /* Games.swift */,
 				C12F9C452C0CA88600757B6A /* GameQuery.swift */,
@@ -179,14 +200,14 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		C12F9C3B2C0C567A00757B6A /* Protocols */ = {
+		C12F9C3B2C0C567A00757B6A /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				C12F9C3C2C0C568300757B6A /* Playable.swift */,
 				C12F9C432C0CA2E600757B6A /* GameRepository.swift */,
-				C12F9C472C0DF81C00757B6A /* GamePhotoRepository.swift */,
+				7E27756E2C0E84090069A1FA /* PhotoRepository.swift */,
+				7E2775702C0E84AF0069A1FA /* STTRepository.swift */,
 			);
-			path = Protocols;
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		C15DED482C06039D00F82585 = {
@@ -255,6 +276,7 @@
 		C15DED852C06041400F82585 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				7E2775742C0EC47F0069A1FA /* STT */,
 				C15DED892C0611C600F82585 /* Network */,
 			);
 			path = Infrastructure;
@@ -270,7 +292,7 @@
 		C15DED872C06042000F82585 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				C12F9C3B2C0C567A00757B6A /* Protocols */,
+				C12F9C3B2C0C567A00757B6A /* Interfaces */,
 				C12F9C382C0C55AF00757B6A /* Entities */,
 				C12F9C332C0C482500757B6A /* Utils */,
 			);
@@ -426,13 +448,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E27756F2C0E84090069A1FA /* PhotoRepository.swift in Sources */,
+				7E2775712C0E84AF0069A1FA /* STTRepository.swift in Sources */,
+				7E2775762C0EC4860069A1FA /* STTEngine.swift in Sources */,
 				C12F9C372C0C4C6A00757B6A /* GameResponseDTO.swift in Sources */,
 				C12F9C352C0C483200757B6A /* KindsOfGames.swift in Sources */,
 				C12F9C462C0CA88600757B6A /* GameQuery.swift in Sources */,
 				C12F9C212C0C440400757B6A /* DefaultAgareeGameRepository.swift in Sources */,
 				C15DED912C074B3B00F82585 /* DataTransferService.swift in Sources */,
 				C15DED592C06039D00F82585 /* ViewController.swift in Sources */,
-				C12F9C412C0C966C00757B6A /* DefaultGamesRepository.swift in Sources */,
+				C12F9C412C0C966C00757B6A /* DefaultSTTRepository.swift in Sources */,
 				C12F9C3D2C0C568300757B6A /* Playable.swift in Sources */,
 				C12F9C272C0C443200757B6A /* DispatchQueueType.swift in Sources */,
 				C15DED8F2C073B3800F82585 /* NetworkService.swift in Sources */,
@@ -445,7 +470,6 @@
 				C12F9C292C0C44B200757B6A /* Cancellable.swift in Sources */,
 				C15DED8B2C0611CC00F82585 /* EndPoint.swift in Sources */,
 				C15DED572C06039D00F82585 /* SceneDelegate.swift in Sources */,
-				C12F9C482C0DF81C00757B6A /* GamePhotoRepository.swift in Sources */,
 				C12F9C3A2C0C55D200757B6A /* GuessWho.swift in Sources */,
 				C12F9C3F2C0C886A00757B6A /* Games.swift in Sources */,
 				C15DED8D2C06137700F82585 /* NetworkConfigurable.swift in Sources */,

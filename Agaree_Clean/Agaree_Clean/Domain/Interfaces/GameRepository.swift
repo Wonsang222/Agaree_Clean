@@ -13,4 +13,10 @@ protocol GameRepository {
         gameQuery: GameQuery,
         completion: @escaping (Result<GuessWho, Error>) -> Void
     ) -> Cancellable?
+    
+    @discardableResult
+    func fetchPhoto(
+        path: String,
+        completion: @escaping (Result<Data, Error>) -> Void
+    ) -> Cancellable?
 }
