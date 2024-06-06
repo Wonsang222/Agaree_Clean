@@ -75,6 +75,7 @@
 		C12F9C402C0C966C00757B6A /* DefaultSTTRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSTTRepository.swift; sourceTree = "<group>"; };
 		C12F9C432C0CA2E600757B6A /* GameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepository.swift; sourceTree = "<group>"; };
 		C12F9C452C0CA88600757B6A /* GameQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameQuery.swift; sourceTree = "<group>"; };
+		C12F9C492C1185D900757B6A /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C15DED512C06039D00F82585 /* Agaree_Clean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agaree_Clean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15DED542C06039D00F82585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C15DED562C06039D00F82585 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -269,6 +270,7 @@
 			children = (
 				C15DED562C06039D00F82585 /* SceneDelegate.swift */,
 				C15DED542C06039D00F82585 /* AppDelegate.swift */,
+				C12F9C492C1185D900757B6A /* Test.playground */,
 			);
 			path = Application;
 			sourceTree = "<group>";
