@@ -2,12 +2,22 @@
 //  STTEngine.swift
 //  Agaree_Clean
 //
-//  Created by 위사모바일 on 6/4/24.
+//  Created by 황원상 on 6/4/24.
 //
 
 import Foundation
 import Speech
 import AVFoundation
+
+protocol SpeakTransferDispatchQueue {
+    func asyncExecuteForSTT(work: @escaping () -> Void)
+}
+
+extension DispatchQueue: SpeakTransferDispatchQueue {
+    func asyncExecuteForSTT(work: @escaping () -> Void) {
+        async(group: nil, execute: work)
+    }
+}
 
 final class STTEngine {
     
@@ -15,6 +25,7 @@ final class STTEngine {
     private var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     private var recognitionTask: SFSpeechRecognitionTask?
     private let audioEngine = AVAudioEngine()
+    private let executeQueue: SpeakTransferDispatchQueue = DispatchQueue.main
     
     func startEngine() throws {
         let audioSession = AVAudioSession.sharedInstance()
@@ -56,14 +67,14 @@ final class STTEngine {
         
         let inputNode = self.audioEngine.inputNode
         guard let recognitionRequest = self.recognitionRequest else { return }
-        self.recognitionTask = self.speechRecognizer.recognitionTask(with: recognitionRequest, resultHandler: { result, error in
+        self.recognitionTask = self.speechRecognizer.recognitionTask(with: recognitionRequest, resultHandler: { [weak self] result, error in
             
               var isFinal = false
               
               if result != nil {
                   let text = result?.bestTranscription.formattedString
                   guard let text = text else { return }
-                  DispatchQueue.main.async {
+                  self?.executeQueue.asyncExecuteForSTT {
                       completion(text)
                   }
                   
@@ -71,11 +82,11 @@ final class STTEngine {
               }
               
               if error != nil || isFinal {
-                  self.audioEngine.stop()
+                  self?.audioEngine.stop()
                   inputNode.removeTap(onBus: 0)
                   
-                  self.recognitionRequest = nil
-                  self.recognitionTask = nil
+                  self?.recognitionRequest = nil
+                  self?.recognitionTask = nil
               }
         })
         
