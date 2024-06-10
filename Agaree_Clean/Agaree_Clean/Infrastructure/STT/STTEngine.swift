@@ -27,17 +27,21 @@ final class STTEngine {
     private let audioEngine = AVAudioEngine()
     private let executeQueue: SpeakTransferDispatchQueue = DispatchQueue.main
     
-    func startEngine() throws {
-        let audioSession = AVAudioSession.sharedInstance()
-        try audioSession.setCategory(.record)
-        try audioSession.setMode(.measurement)
-        try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
-        
-        self.recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
-        guard let recognitionRequest = recognitionRequest else {
-            fatalError()
+    func startEngine()  {
+        do {
+            let audioSession = AVAudioSession.sharedInstance()
+            try audioSession.setCategory(.record)
+            try audioSession.setMode(.measurement)
+            try audioSession.setActive(true, options: .notifyOthersOnDeactivation)
+            
+            self.recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+            guard let recognitionRequest = recognitionRequest else {
+                fatalError()
+            }
+            recognitionRequest.shouldReportPartialResults = true
+        } catch {
+                
         }
-        recognitionRequest.shouldReportPartialResults = true
     }
     
     func offEngine() {
@@ -49,15 +53,18 @@ final class STTEngine {
     }
     
     func runRecognizer(
-        completion: @escaping (String) -> Void) {
+        on queue: SpeakTransferDispatchQueue,
+        completion: @escaping (String) -> Void
+    ) {
             if self.audioEngine.isRunning {
                 removeAudioTasks()
             } else {
-              startRecording(completion: completion)
+              startRecording(on: queue, completion: completion)
             }
         }
     
     private func startRecording(
+        on queue: SpeakTransferDispatchQueue,
         completion: @escaping (String) -> Void
     ) {
         if self.recognitionTask != nil {
@@ -74,10 +81,9 @@ final class STTEngine {
               if result != nil {
                   let text = result?.bestTranscription.formattedString
                   guard let text = text else { return }
-                  self?.executeQueue.asyncExecuteForSTT {
+                  queue.asyncExecuteForSTT {
                       completion(text)
                   }
-                  
                   isFinal = (result?.isFinal)!
               }
               

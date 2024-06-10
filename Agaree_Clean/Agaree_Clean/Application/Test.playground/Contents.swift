@@ -1,37 +1,32 @@
 import UIKit
 
-enum TestError: Error {
-    case Testing
+
+
+protocol Testqueue {
+    func execution(completion: @escaping () -> Void)
 }
 
-enum TestError2: Error {
-    case Testing2
-}
-
-
-func Test() throws {
-    do {
-        
-    } catch {
-        
+extension DispatchQueue: Testqueue {
+    func execution(completion: @escaping () -> Void) {
+        async(group: nil, execute: completion)
     }
 }
 
-func insideTest() throws {
-    do {
-        try insideTest2()
-    } catch {
-        throw TestError2.Testing2
+
+func test(on queue: Testqueue, completion: @escaping (String) -> Void) {
+    queue.execution {
+        completion("hahaah")
+        print(Thread.isMainThread)
     }
-    
 }
 
-func insideTest2() throws {
-    throw TestError.Testing
+
+test(on: DispatchQueue.main) { text in
+    print(text)
 }
 
-do {
-    try  insideTest()
-} catch {
-    print(error)
+test(on: DispatchQueue.global()) { text in
+    print(text)
 }
+
+

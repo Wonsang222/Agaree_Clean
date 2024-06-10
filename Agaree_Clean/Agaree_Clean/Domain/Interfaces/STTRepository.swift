@@ -8,8 +8,9 @@
 import Foundation
 
 protocol STTRepository {
+    
     func startRecognition(
-        completion: @escaping (Result<String, Error>) -> Void
+        completion: @escaping (STTLetters) -> Void
     )
     
     func stopRecognition()
