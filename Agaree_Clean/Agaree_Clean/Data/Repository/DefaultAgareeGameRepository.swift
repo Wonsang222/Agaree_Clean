@@ -7,3 +7,18 @@
 
 import Foundation
 
+final class DefaultAgareeGameRepository {
+    
+    private let dataTransferService: DataTransferService
+    private let backgroundQueue: DataTransferDispachQueue
+    
+    init(
+        dataTransferService: DataTransferService,
+        backgroundQueue: DataTransferDispachQueue = DispatchQueue.global(qos: .userInitiated)
+    ) {
+        self.dataTransferService = dataTransferService
+        self.backgroundQueue = backgroundQueue
+    }
+}
+
+extension DefaultAgareeGameRepository: 
