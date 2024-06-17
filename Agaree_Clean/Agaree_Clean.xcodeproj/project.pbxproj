@@ -28,12 +28,13 @@
 		C12F9C4D2C14663500757B6A /* STTRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C4C2C14663500757B6A /* STTRequestDTO.swift */; };
 		C12F9C4F2C146B2500757B6A /* DefaultPhotoRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C4E2C146B2500757B6A /* DefaultPhotoRespository.swift */; };
 		C12F9C512C146D1A00757B6A /* STTLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C502C146D1A00757B6A /* STTLetter.swift */; };
-		C12F9C562C14A41A00757B6A /* DefaultGamePlayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C552C14A41A00757B6A /* DefaultGamePlayUseCase.swift */; };
-		C12F9C5C2C15571000757B6A /* GamePlayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C5B2C15571000757B6A /* GamePlayUseCase.swift */; };
+		C12F9C562C14A41A00757B6A /* TimerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C552C14A41A00757B6A /* TimerUseCase.swift */; };
 		C12F9C5F2C1560C500757B6A /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C5E2C1560C500757B6A /* Observable.swift */; };
 		C12F9C622C15B9CA00757B6A /* AgareeTimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C612C15B9CA00757B6A /* AgareeTimerService.swift */; };
 		C12F9C642C16821200757B6A /* DefaultTimerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C632C16821200757B6A /* DefaultTimerRepository.swift */; };
 		C12F9C662C16832D00757B6A /* TimerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12F9C652C16832D00757B6A /* TimerRepository.swift */; };
+		C136AF802C1FD300009E47F6 /* TimerSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136AF7F2C1FD300009E47F6 /* TimerSecond.swift */; };
+		C136AF822C1FD754009E47F6 /* MatchAnswerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136AF812C1FD754009E47F6 /* MatchAnswerUseCase.swift */; };
 		C15DED552C06039D00F82585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED542C06039D00F82585 /* AppDelegate.swift */; };
 		C15DED572C06039D00F82585 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED562C06039D00F82585 /* SceneDelegate.swift */; };
 		C15DED592C06039D00F82585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15DED582C06039D00F82585 /* ViewController.swift */; };
@@ -88,12 +89,13 @@
 		C12F9C4C2C14663500757B6A /* STTRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTRequestDTO.swift; sourceTree = "<group>"; };
 		C12F9C4E2C146B2500757B6A /* DefaultPhotoRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPhotoRespository.swift; sourceTree = "<group>"; };
 		C12F9C502C146D1A00757B6A /* STTLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTLetter.swift; sourceTree = "<group>"; };
-		C12F9C552C14A41A00757B6A /* DefaultGamePlayUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGamePlayUseCase.swift; sourceTree = "<group>"; };
-		C12F9C5B2C15571000757B6A /* GamePlayUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayUseCase.swift; sourceTree = "<group>"; };
+		C12F9C552C14A41A00757B6A /* TimerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerUseCase.swift; sourceTree = "<group>"; };
 		C12F9C5E2C1560C500757B6A /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		C12F9C612C15B9CA00757B6A /* AgareeTimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgareeTimerService.swift; sourceTree = "<group>"; };
 		C12F9C632C16821200757B6A /* DefaultTimerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTimerRepository.swift; sourceTree = "<group>"; };
 		C12F9C652C16832D00757B6A /* TimerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRepository.swift; sourceTree = "<group>"; };
+		C136AF7F2C1FD300009E47F6 /* TimerSecond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSecond.swift; sourceTree = "<group>"; };
+		C136AF812C1FD754009E47F6 /* MatchAnswerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchAnswerUseCase.swift; sourceTree = "<group>"; };
 		C15DED512C06039D00F82585 /* Agaree_Clean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agaree_Clean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15DED542C06039D00F82585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C15DED562C06039D00F82585 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				C12F9C3E2C0C886A00757B6A /* Games.swift */,
 				C12F9C452C0CA88600757B6A /* GameQuery.swift */,
 				C12F9C502C146D1A00757B6A /* STTLetter.swift */,
+				C136AF7F2C1FD300009E47F6 /* TimerSecond.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -261,18 +264,10 @@
 		C12F9C592C14A72E00757B6A /* PlayGame */ = {
 			isa = PBXGroup;
 			children = (
-				C12F9C5A2C14A75200757B6A /* Protocol */,
-				C12F9C552C14A41A00757B6A /* DefaultGamePlayUseCase.swift */,
+				C12F9C552C14A41A00757B6A /* TimerUseCase.swift */,
+				C136AF812C1FD754009E47F6 /* MatchAnswerUseCase.swift */,
 			);
 			path = PlayGame;
-			sourceTree = "<group>";
-		};
-		C12F9C5A2C14A75200757B6A /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				C12F9C5B2C15571000757B6A /* GamePlayUseCase.swift */,
-			);
-			path = Protocol;
 			sourceTree = "<group>";
 		};
 		C12F9C5D2C1560BD00757B6A /* Utils */ = {
@@ -540,6 +535,7 @@
 				C12F9C352C0C483200757B6A /* KindsOfGames.swift in Sources */,
 				C12F9C662C16832D00757B6A /* TimerRepository.swift in Sources */,
 				C12F9C512C146D1A00757B6A /* STTLetter.swift in Sources */,
+				C136AF802C1FD300009E47F6 /* TimerSecond.swift in Sources */,
 				C12F9C462C0CA88600757B6A /* GameQuery.swift in Sources */,
 				C12F9C622C15B9CA00757B6A /* AgareeTimerService.swift in Sources */,
 				C12F9C212C0C440400757B6A /* DefaultAgareeGameRepository.swift in Sources */,
@@ -553,18 +549,18 @@
 				C12F9C2B2C0C44C700757B6A /* ConnectionError.swift in Sources */,
 				C12F9C322C0C476700757B6A /* GameRequestDTO.swift in Sources */,
 				C12F9C442C0CA2E600757B6A /* GameRepository.swift in Sources */,
-				C12F9C562C14A41A00757B6A /* DefaultGamePlayUseCase.swift in Sources */,
+				C12F9C562C14A41A00757B6A /* TimerUseCase.swift in Sources */,
 				C12F9C242C0C441800757B6A /* RepositoryTask.swift in Sources */,
 				C12F9C4F2C146B2500757B6A /* DefaultPhotoRespository.swift in Sources */,
 				C12F9C2F2C0C46C300757B6A /* APIEndpoints.swift in Sources */,
 				C12F9C4D2C14663500757B6A /* STTRequestDTO.swift in Sources */,
 				C12F9C642C16821200757B6A /* DefaultTimerRepository.swift in Sources */,
+				C136AF822C1FD754009E47F6 /* MatchAnswerUseCase.swift in Sources */,
 				C12F9C292C0C44B200757B6A /* Cancellable.swift in Sources */,
 				C15DED8B2C0611CC00F82585 /* EndPoint.swift in Sources */,
 				C15DED572C06039D00F82585 /* SceneDelegate.swift in Sources */,
 				C12F9C3A2C0C55D200757B6A /* GuessWho.swift in Sources */,
 				C12F9C5F2C1560C500757B6A /* Observable.swift in Sources */,
-				C12F9C5C2C15571000757B6A /* GamePlayUseCase.swift in Sources */,
 				C12F9C3F2C0C886A00757B6A /* Games.swift in Sources */,
 				C15DED8D2C06137700F82585 /* NetworkConfigurable.swift in Sources */,
 			);
